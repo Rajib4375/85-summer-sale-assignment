@@ -35,9 +35,159 @@
         </div>
 
     </header>
-    <main>
+    <main class="bg-slate-50">
+        <div class="flex flex-col lg:flex-row mt-24 w-10/12 mx-auto justify-around ">
+            <div class="">
+                <!-- 1st card section -->
+                <h3 class="text-4xl font-semibold text-black mb-8">Kitchenware</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!--prod1 -->
+                    <div onclick="calculatePriod1Area(this)" class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img  src="./images/prod1.png" alt="porid1" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   </div>
+                   <h2 id="base-text" class="card-title">K. Accessories</h2>
+                   <p>39.00 TK</p>
+                    </div>
+                    </div>
+                    <!--prod2 -->
+                    <div onclick="calculateAccessoriesArea()" class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img  src="./images/prod2.png" alt="porid1" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   </div>
+                   <h2 id="accessories-title" class="card-title">K. Accessories</h2>
+                   <p>25.00TK</p>
+                    </div>
+                    </div>
+                    <!--prod3 -->
+                    <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img  src="./images/prod3.png" alt="porid1" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                   </div>
+                   <h2 class="card-title">Home Cooker</h2>
+                   <p>49.00 TK</p>
+                    </div>
+                    </div>
+
+    
+                </div>
+                <!-- 2nd card section -->
+                <div class="mt-12">
+                    <h3 class="text-4xl font-semibold text-black mb-8">Sportswear</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!--prod4 -->
+                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img  src="./images/prod4.png" alt="porid4" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       </div>
+                       <h2 class="card-title">Sports Back Cap</h2>
+                       <p>49.00 TK</p>
+                        </div>
+                        </div>
+                        <!--prod5 -->
+                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img  src="./images/prod5.png" alt="porid5" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       </div>
+                       <h2 class="card-title">Full Jersey Set</h2>
+                       <p>69.00 TK</p>
+                        </div>
+                        </div>
+                        <!--prod6 -->
+                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img  src="./images/prod6.png" alt="porid1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating justify-center ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                       </div>
+                       <h2 class="card-title">Sports cates</h2>
+                       <p>159.00 TK</p>
+                        </div>
+                        </div>
+    
+        
+                    </div>
+    
+                </div>
+            </div>
+           <div>
+             <!-- input-container -->
+             <div class="w-[350px] h-[150px] p-5 bg-amber-50 mb-6">
+                <h3 class="text-2xl font-medium mb-4">Have coupon?</h3>
+                <div class="flex items-center">
+                    <input class="border p-4" type="text" name="" id="" placeholder="Coupon code">
+                    <button class="text-xl font-medium text-white bg-pink-600 rounded-lg p-4">Apply</button>
+                </div>
+
+            </div>
+            <!-- calculation container -->
+            <div class="w-[350px] h-[450px] p-5 bg-amber-50">
+               <div id="selected-item" class="flex-1">
+
+               </div>
+                <hr>
+                <div class="text-2xl font-medium mb-6">
+                    <p>Total price: TK</p>
+                    <p> Discount : TK</p>
+                    <p>Total:  TK</p>
+                </div>
+                <hr>
+                <button class="text-xl font-medium text-white bg-pink-600 rounded-lg p-4 mt-4 w-full">Make Purchase</button>
+
+
+            </div>
+           </div>
+
+        </div>
+
 
     </main>
-    
+   <script src="js/summar.js"></script>
 </body>
 </html>
