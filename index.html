@@ -22,7 +22,7 @@
         <div class="flex flex-col lg:flex-row justify-between items-center w-10/12 mx-auto ">
             <div>
                 <h3 class="text-3xl font-medium text-center mb-10 text-black">---SALE FEVER---</h3>
-                <h1 class="text-5xl font-bold mb-12 text-black">Purchase TK 200 or <br> above & get <span>20% off</span></h1>
+                <h1 class="text-5xl font-bold mb-12 text-black">Purchase TK 200 or <br> above & get <span class="text-pink-600">20% off</span></h1>
                 <div class="flex gap-4 justify-center">
                     <p class="text-2xl font-medium text-black ">Use Promo Code</p>
                     <button class="text-xl font-medium text-white bg-pink-600 rounded-lg	px-4 py-2">SELL200</button>
@@ -42,9 +42,9 @@
                 <h3 class="text-4xl font-semibold text-black mb-8">Kitchenware</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!--prod1 -->
-                    <div onclick="calculatePriod1Area(this)" class="card w-96 bg-base-100 shadow-xl">
+                    <div onclick="textElementArea()" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img  src="./images/prod1.png" alt="porid1" class="rounded-xl" />
+                          <img  src="./images/prod1.png" alt="porid4" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating justify-center ">
@@ -54,14 +54,14 @@
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                    </div>
-                   <h2 id="base-text" class="card-title">K. Accessories</h2>
+                   <h2 id="text-accessories" class="text-xl	">K. Accessories</h2>
                    <p>39.00 TK</p>
                     </div>
                     </div>
                     <!--prod2 -->
-                    <div onclick="calculateAccessoriesArea()" class="card w-96 bg-base-100 shadow-xl">
+                    <div onclick="textAccessoriesArea()" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img  src="./images/prod2.png" alt="porid1" class="rounded-xl" />
+                          <img  src="./images/prod2.png" alt="porid2" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating justify-center ">
@@ -71,14 +71,14 @@
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                    </div>
-                   <h2 id="accessories-title" class="card-title">K. Accessories</h2>
-                   <p>25.00TK</p>
+                   <h2 id="Accessories-title" class="card-title">K. Accessories</h2>
+                   <p>25.00 TK</p>
                     </div>
                     </div>
                     <!--prod3 -->
-                    <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                    <div onclick="textHomeCookerArea()" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img  src="./images/prod3.png" alt="porid1" class="rounded-xl" />
+                          <img  src="./images/prod3.png" alt="porid3" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <div class="rating justify-center ">
@@ -88,7 +88,7 @@
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                    </div>
-                   <h2 class="card-title">Home Cooker</h2>
+                   <h2 id="homecooker-title" class="card-title">Home Cooker</h2>
                    <p>49.00 TK</p>
                     </div>
                     </div>
@@ -100,7 +100,7 @@
                     <h3 class="text-4xl font-semibold text-black mb-8">Sportswear</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!--prod4 -->
-                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                        <div onclick="sportsCapAreaText()" class="card w-96 bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                               <img  src="./images/prod4.png" alt="porid4" class="rounded-xl" />
                             </figure>
@@ -112,12 +112,12 @@
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                        </div>
-                       <h2 class="card-title">Sports Back Cap</h2>
+                       <h2 id="sportsCap-title" class="card-title">Sports Back Cap</h2>
                        <p>49.00 TK</p>
                         </div>
                         </div>
                         <!--prod5 -->
-                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                        <div onclick="fullJerseyText()" class="card w-96 bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                               <img  src="./images/prod5.png" alt="porid5" class="rounded-xl" />
                             </figure>
@@ -129,12 +129,12 @@
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                        </div>
-                       <h2 class="card-title">Full Jersey Set</h2>
+                       <h2 id="jersy-title" class="card-title">Full Jersey Set</h2>
                        <p>69.00 TK</p>
                         </div>
                         </div>
                         <!--prod6 -->
-                        <div onclick="hendelClickBtn(this)" class="card w-96 bg-base-100 shadow-xl">
+                        <div onclick="sportscatesText()" class="card w-96 bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                               <img  src="./images/prod6.png" alt="porid1" class="rounded-xl" />
                             </figure>
@@ -146,7 +146,7 @@
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                        </div>
-                       <h2 class="card-title">Sports cates</h2>
+                       <h2 id="sportsCates-title" class="card-title">Sports cates</h2>
                        <p>159.00 TK</p>
                         </div>
                         </div>
@@ -168,7 +168,14 @@
             </div>
             <!-- calculation container -->
             <div class="w-[350px] h-[450px] p-5 bg-amber-50">
-               <div id="selected-item" class="flex-1">
+               <div class="h-[255px]">
+                <p>1. <span id="selected-items"></span></p>
+                <p>2. <span id="selected1-items"></span></p>
+                <p>3. <span id="selected2-items"></span></p>
+                <p>4. <span id="selected3-items"></span></p>
+                <p>5. <span id="selected4-items"></span></p>
+                <p>6. <span id="selected5-items"></span></p>
+
 
                </div>
                 <hr>
@@ -188,6 +195,6 @@
 
 
     </main>
-   <script src="js/summar.js"></script>
+   <script src="js/text-area.js"></script>
 </body>
 </html>
