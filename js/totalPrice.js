@@ -10,9 +10,7 @@ document.getElementById('click-item').addEventListener('click', function(){
    if(priceText > 0){
     buttonClick.disabled = false;
 }
-
-    
-    
+   
 })
 
 // Accessories -2
@@ -115,11 +113,6 @@ document.getElementById('click-sportscates').addEventListener('click', function(
     const totalPrice = priceText + accessoriesprice + homecooker + sportsCap + jarsey + cates;
     const totalPriceAreaSpan = document.getElementById('total-price-text');
      totalPriceAreaSpan.innerText = totalPrice.toFixed(2);
-
-
-
-
-
 
 document.getElementById('button-apply').addEventListener('click', function(){
 
