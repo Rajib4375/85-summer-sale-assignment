@@ -1,83 +1,18 @@
 // Accessories -1
-// function textElementArea(){
-//     const priceFiledElement = document.getElementById('Accessories-price');
-//     const priceFiled = priceFiledElement.innerText;
-//     const priceText = parseFloat(priceFiled);
-    
-// }
-// // Accessories -2
-// function textAccessoriesArea(){
-//    const accessoriesFildElement = document.getElementById('accessories-priceText');
-//    const accessoriesFild = accessoriesFildElement.innerText;
-//    const accessoriesprice = parseFloat(accessoriesFild);
-
-   
-// }
-// // Home Cooker
-// function textHomeCookerArea(){
-//     const homeCookerpriceElement =document.getElementById('homecooker-price');
-//     const homecookerPrice = homeCookerpriceElement.innerText;
-//     const homecooker =parseFloat(homecookerPrice);
-//     console.log(homecooker)
-// }
-// // sports cap
-// function sportsCapAreaText(){
-//     const sportsCappriceElement =document.getElementById('sportscap-price');
-//     const sportsCapPrice = sportsCappriceElement.innerText;
-//     const sportsCap =parseFloat(sportsCapPrice);
-//     console.log(sportsCap)
-// }
-// // 
-// function fullJerseyText(){
-//     const jarseypriceElement =document.getElementById('jarsey-price');
-//     const jarseyPrice = jarseypriceElement.innerText;
-//     const jarsey =parseFloat(jarseyPrice);
-//     console.log(jarsey)
-// }
-// // 
-// function sportscatesText(){
-//     const catespriceElement =document.getElementById('cates-price');
-//     const catesPrice = catespriceElement.innerText;
-//     const cates =parseFloat(catesPrice);
-    
-//     const priceFiledElement = document.getElementById('Accessories-price');
-//     const priceFiled = priceFiledElement.innerText;
-//     const priceText = parseFloat(priceFiled);
-
-//     const accessoriesFildElement = document.getElementById('accessories-priceText');
-//    const accessoriesFild = accessoriesFildElement.innerText;
-//    const accessoriesprice = parseFloat(accessoriesFild);
-
-//    const homeCookerpriceElement =document.getElementById('homecooker-price');
-//     const homecookerPrice = homeCookerpriceElement.innerText;
-//     const homecooker =parseFloat(homecookerPrice);
-    
-//     const sportsCappriceElement =document.getElementById('sportscap-price');
-//     const sportsCapPrice = sportsCappriceElement.innerText;
-//     const sportsCap =parseFloat(sportsCapPrice);
-    
-
-//     const jarseypriceElement =document.getElementById('jarsey-price');
-//     const jarseyPrice = jarseypriceElement.innerText;
-//     const jarsey =parseFloat(jarseyPrice);
-    
-
-
-
-
-//     const totalPrice = priceText + accessoriesprice + homecooker + sportsCap + jarsey + cates;
-//     const totalPriceAreaSpan = document.getElementById('total-price-text');
-//     totalPriceAreaSpan.innerText = totalPrice;
-// }
-
-
-// Accessories -1
 document.getElementById('click-item').addEventListener('click', function(){
     const priceFiledElement = document.getElementById('Accessories-price');
     const priceFiled = priceFiledElement.innerText;
     const priceText = parseFloat(priceFiled);
     const totalPriceAreaSpan = document.getElementById('total-price-text');
     totalPriceAreaSpan.innerText = priceText.toFixed(2);
+    const buttonClick = document.getElementById('purchase-button');
+    buttonClick.disabled = true;
+   if(priceText > 0){
+    buttonClick.disabled = false;
+}
+
+    
+    
 })
 
 // Accessories -2
@@ -150,6 +85,13 @@ document.getElementById('click-fulljerser').addEventListener('click', function()
     const totalPriceAreaSpan = document.getElementById('total-price-text');
      totalPriceAreaSpan.innerText = totalPrice.toFixed(2);
 
+     // Apply button
+    const buttonClick = document.getElementById('button-apply');
+    buttonClick.disabled = true;
+   if(totalPrice > 200){
+    buttonClick.disabled = false;
+}
+
 })
 document.getElementById('click-sportscates').addEventListener('click', function(){
     const catespriceElement =document.getElementById('cates-price');
@@ -175,14 +117,9 @@ document.getElementById('click-sportscates').addEventListener('click', function(
      totalPriceAreaSpan.innerText = totalPrice.toFixed(2);
 
 
-// button Disable 
-     const button = document.getElementById('button-apply');
-button.disabled = true;
 
 
-if(totalPrice>200){
-    button.disabled = false;
-}
+
 
 document.getElementById('button-apply').addEventListener('click', function(){
 
@@ -196,20 +133,28 @@ document.getElementById('button-apply').addEventListener('click', function(){
     
 
 
+
     if(inputFiled ===coupon){
         const discountAmount = (totalPrice * 20)/100;
         const discountAreaSpan =document.getElementById('discount-area');
-        discountAreaSpan.innerText= discountAmount;  
+        discountAreaSpan.innerText= discountAmount.toFixed(2);  
+       
         
+        const totalAmount = totalPrice - discountAmount;
+        const totalAmountAreaSpan = document.getElementById('total-area');
+        totalAmountAreaSpan.innerText =totalAmount.toFixed(2);
     }
-    
-
-
-
-    
-    
 
 })
 
 })
+
+
+// modal button
+
+const modalButton = document.getElementById('modal-button');
+modalButton.addEventListener('click', reloadWebsite);
+function reloadWebsite(){
+    location.reload();
+}
 
