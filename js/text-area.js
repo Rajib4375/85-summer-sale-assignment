@@ -1,8 +1,6 @@
 function textElementArea(){
     const baseTextElement = document.getElementById('text-accessories');
     const baseText = baseTextElement.innerText;
-    
-
     const selectedTextArea = document.getElementById('selected-items');
     selectedTextArea.innerText = baseText;
 }
@@ -38,3 +36,4 @@ function sportscatesText(){
     const selectedTextArea = document.getElementById('selected5-items');
     selectedTextArea.innerText = sportsCatesFild;
 }
+
